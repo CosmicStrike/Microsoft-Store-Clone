@@ -22,6 +22,7 @@ body {
 
 header {
     background-color: white;
+    background: white;
     width: 100%;
     /*
          Now Header will always remain at top of page even if we scroll
@@ -29,6 +30,7 @@ header {
      */
     position: fixed;
     top: 0px;
+    box-shadow: 0.1rem 0.1rem 8px #d3d3d3df;
 }
 
 .main-nav {
@@ -56,17 +58,18 @@ header {
 }
 
 .nav-left>.nav-list>li:nth-child(2) {
-    margin-left: 1.8rem;
+    margin-left: 0.6rem;
     font-weight: bolder;
 }
 
 .list-item-1,
 .list-item-2 {
     display: inline-block;
-    margin-left: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     height: 3.2rem;
     vertical-align: middle;
-    border: 0.01rem solid white;
+    border: 0.01rem solid rgb(117, 117, 117);
 }
 
 .main-nav-item-1,
@@ -75,8 +78,8 @@ header {
     text-decoration: none;
     color: black;
     margin-top: 1rem;
+    cursor: pointer;
 }
-
 
 .nav-right {
     flex-grow: 1;
@@ -97,11 +100,113 @@ header {
     margin-left: 0.2rem;
 }
 
+
+.dropdown-Software {
+    display: none;
+    position: fixed;
+    top: 0.01rem;
+    margin-top: 3.25rem;
+    margin-left: 20.25rem;
+    width: 16.4rem;
+    box-shadow: 0rem 0.1rem #000000df;
+}
+
+.dropdown-Game {
+    display: none;
+    position: fixed;
+    top: 0.01rem;
+    margin-top: 3.25rem;
+    margin-left: 25.90rem;
+    width: 16rem;
+    box-shadow: 0rem 0.1rem #000000df;
+}
+
+.dropdown-list {
+    background-color: #eeeeee;
+}
+
+.dropdown-list-item,
+.sub-dropdown-list-item {
+    display: block;
+    position: relative;
+    list-style: none;
+
+    max-width: auto;
+}
+
+.sub-dropdown-list-head {
+    display: block;
+    position: relative;
+    list-style: none;
+
+    max-width: auto;
+    height: 3.25rem;
+}
+
+.dropdown-list-item {
+    height: 3.25rem;
+}
+
+.sub-dropdown-list-item {
+    height: 2.72rem;
+}
+
+.dropdown-list-item:hover {
+    background-color: #e6e6e6;
+}
+
+.sub-nav-item,
+.sub-nav-head {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    top: 1rem;
+    left: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+.sub-nav-head {
+    font-weight: 600;
+    cursor: default;
+}
+
+.sub-nav-item:hover {
+    border-bottom: 0.04rem solid black;
+}
+
+.dropdown-container {
+    margin-left: 15rem;
+    margin-top: 3.25rem;
+
+    display: none;
+    width: 77rem;
+    height: 25rem;
+    position: fixed;
+    top: 0.01rem;
+
+    background-color: #eeeeee;
+    justify-content: space-around;
+    box-shadow: 0rem 0.1rem #000000df;
+}
+
+.dropdown {
+    flex-grow: 1;
+}
+
+.show-block {
+    display: block;
+}
+
+.show-flex {
+    display: flex;
+}
+
 main {
     /* flex-grow : it will make main section grow so as to all three will take total space without any gap*/
     flex-grow: 1;
-
-    background-color: rgb(77, 72, 72);
+    margin-top: 3.8rem;
+    background-color: rgb(255, 255, 255);
     width: 100%;
 }
 
