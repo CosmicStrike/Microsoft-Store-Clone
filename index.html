@@ -17,48 +17,216 @@
     <link rel="icon" href="Images/favicon.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
 </head>
 
 <body>
     <header>
         <nav class="main-nav">
-            <div class="nav-left">
-                <ul class="nav-list">
+            <div class="hambug-open">
+                <span class="material-symbols-outlined" style="font-weight: 600; font-size: 1.8rem;">
+                    close
+                </span>
+            </div>
+            <div class="hambug">
+                <div class="hambug-line-1"></div>
+                <div class="hambug-line-2"></div>
+                <div class="hambug-line-3"></div>
+            </div>
+            <div class="nav-logo">
+                <ul>
                     <li class="list-item-1"><a href="https://www.microsoft.com/en-in/"><img class="webpage-logo"
                                 src="Images/Microsoft_logo.png" alt="Microsoft Logo"></a></li>
-
-                    <li class="list-item-2"><a class="main-nav-item-1" href="index.html">Windows Apps</a></li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <ul class="nav-left-list">
+                    <li class="list-item-2"><a class="main-nav-item-1" href="index.html">Windows
+                            Apps</a></li>
                     <li class="list-item-2"><a class="main-nav-item-1">Software</a>
-
-                        <span class="material-symbols-outlined"
+                        <span class="material-symbols-outlined dropdown-arrow"
                             style="vertical-align:middle; font-size:1rem; font-weight:600">
                             expand_more
                         </span>
+
+                        <ul class="dropdown-Software">
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft 365</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Office</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Windows</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Software for Mac</a>
+                            </li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Business Software</a>
+                            </li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Software Support</a>
+                            </li>
+                        </ul>
+
                     </li>
+
+
                     <li class="list-item-2"><a class="main-nav-item-1">Games & Entertainment</a>
                         <!--
                             By removing href page doesnot load/redirect
                             Because of this when u scroll down and clicked the dropdown option it will open at same place without reloading and going to top
                             Otherwise what happen by the presence of href, page reloads and goes to top when we had scrolled down
                         -->
-                        <span class="material-symbols-outlined"
+                        <span class="material-symbols-outlined  dropdown-arrow"
                             style="vertical-align:middle; font-size:1rem; font-weight:600">
                             expand_more
                         </span>
+                        <ul class="dropdown-Game">
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox consoles</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox games</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Game Pass
+                                    Ultimate</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Live Gold</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Pc games</a></li>
+                            <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Movies & TV</a></li>
+                        </ul>
+
                     </li>
+
                     <li class="list-item-2"><a class="main-nav-item-1">All Microsoft</a>
                         <span class="material-symbols-outlined"
                             style="vertical-align:middle; font-size:1rem; font-weight:600">
                             expand_more
                         </span>
+
+
+                        <ul class="dropdown-container">
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Software</a>
+                                </li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Apps</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">OneDrive</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Outlook</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Skype</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">OneNote</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Teams</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Edge</a></li>
+                            </ul>
+
+
+
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">PCs &
+                                        Devices</a>
+                                </li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Computers</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Shop Xbox</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Accessories</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">VR & mixed
+                                        reality</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Phones</a></li>
+                            </ul>
+
+
+
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Entertainment</a>
+                                </li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Game Pass
+                                        Ultimate</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PC Game Pass</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Xbox games</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PC games</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Digital
+                                        games</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Movies & TV</a>
+                                </li>
+                            </ul>
+
+
+
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Business</a>
+                                </li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Cloud</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Azure</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Dynamics
+                                        365</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        365</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows 365</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Industry</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Advertising</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Shop
+                                        Business</a>
+                                </li>
+                            </ul>
+
+
+
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Developer</a>
+                                </li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">.NET</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Visual
+                                        Studio</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">VS Code</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PWABuilder </a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Dev
+                                        Center</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Docs</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Power Apps</a>
+                                </li>
+                            </ul>
+
+
+
+                            <ul class="dropdown-list">
+                                <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Other</a></li>
+
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft
+                                        Rewards</a></li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Education</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Virtual workshop
+                                        &
+                                        training</a>
+                                </li>
+                                <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Gift cards</a>
+                                </li>
+                            </ul>
+
+                        </ul>
+                    <li class="list-item-2"><a class="main-nav-item-1"
+                            href="https://developer.microsoft.com/en-us/microsoft-store/">Developers</a>
                     </li>
                 </ul>
             </div>
 
+
+
+
             <div class="nav-right">
-                <ul class="nav-list">
-                    <li class="list-item-2"><a class="main-nav-item-1"
-                            href="https://developer.microsoft.com/en-us/microsoft-store/">Developers</a></li>
+                <ul>
                     <li class="list-item-1">
                         <a class="main-nav-item-2" href="#">Sign in</a>
                         <a class="sign-in" href="#"><img class="user-login-logo" src="Images/User-login-logo.webp"
@@ -68,117 +236,6 @@
             </div>
         </nav>
     </header>
-
-    <section>
-        <div class="dropdown-Software">
-            <ul class="dropdown-list">
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft 365</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Office</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Windows</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Software for Mac</a>
-                </li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Business Software</a>
-                </li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Software Support</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="dropdown-Game">
-            <ul class="dropdown-list">
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox consoles</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox games</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Game Pass
-                        Ultimate</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Live Gold</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Pc games</a></li>
-                <li class="dropdown-list-item"><a class="sub-nav-item" href="#">Movies & TV</a></li>
-            </ul>
-        </div>
-
-        <!-- *************************************************************************************   -->
-        <div class="dropdown-container">
-            <div class="dropdown dropdown-All-Microsoft-Software">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Software</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Apps</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">OneDrive</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Outlook</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Skype</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">OneNote</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Teams</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Edge</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown dropdown-All-Microsoft-PCsD">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">PCs & Devices</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Computers</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Shop Xbox</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Accessories</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">VR & mixed reality</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Phones</a></li>
-                </ul>
-            </div>
-
-            <div class=" dropdown dropdown-All-Microsoft-Entertainment">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Entertainment</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Xbox Game Pass Ultimate</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PC Game Pass</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Xbox games</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PC games</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Digital games</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Movies & TV</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown dropdown-All-Microsoft-Business">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Business</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Cloud</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Azure</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Dynamics 365</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft 365</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows 365</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Industry</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Advertising</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Shop Business</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown dropdown-All-Microsoft-Developer">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Developer</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">.NET</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Visual Studio</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">VS Code</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">PWABuilder </a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Windows Dev Center</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Docs</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Power Apps</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown dropdown-All-Microsoft-Other">
-                <ul class="dropdown-list">
-                    <li class="sub-dropdown-list-head"><a class="sub-nav-head" href="#">Other</a></li>
-
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Microsoft Rewards</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Education</a></li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Virtual workshop & training</a>
-                    </li>
-                    <li class="sub-dropdown-list-item"><a class="sub-nav-item" href="#">Gift cards</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
     <main>
 
