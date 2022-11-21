@@ -46,30 +46,35 @@ function ManageDropDown() {
     for (var i = 1; i < navList.length; i++) {
         var button = navList[i]
         button.addEventListener('click', (event) => {
-            console.log(event)
-            console.log(event.target)
+            // console.log(event)
+            // console.log(event.target)
+            var width = window.innerWidth
+
             var elementName = event.target.innerText
             if (elementName == "Software") {
-                HideAllDropDown([1, 2])
+                if (width >= 1050)
+                    HideAllDropDown([1, 2])
                 document.getElementsByClassName("dropdown-Software")[0].classList.toggle("display-flex")
                 ToggleAllNavbarStyle()
             }
             else if (elementName == "Games & Entertainment") {
-                HideAllDropDown([0, 2])
+                if (width >= 1050)
+                    HideAllDropDown([0, 2])
                 document.getElementsByClassName("dropdown-Game")[0].classList.toggle("display-flex")
                 ToggleAllNavbarStyle()
             }
             else if (elementName == "All Microsoft") {
-                HideAllDropDown([0, 1])
+                if (width >= 1050)
+                    HideAllDropDown([0, 1])
                 document.getElementsByClassName("dropdown-container")[0].classList.toggle("display-flex")
                 ToggleAllNavbarStyle()
             }
+
         })
     }
 
     //Adds event listener on documnet so that if clicked outside dropdown, it will close
     document.addEventListener('click', (event) => {
-
         for (var i = 0; i < dropdownList.length; i++) {
             if (document.getElementsByClassName(dropdownList[i])[0].contains(event.target)) {
                 return
@@ -94,14 +99,20 @@ function Hambug() {
     document.getElementsByClassName('hambug')[0].addEventListener('click', (evt) => {
         document.getElementsByClassName('hambug')[0].style.display = 'none'
         document.getElementsByClassName('hambug-open')[0].style.display = 'flex'
+        document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
+        print(evt.target.elementName)
     })
 
+    //Add event listeners to layer 1
 }
 
 function HambugOpened() {
     document.getElementsByClassName('hambug-open')[0].addEventListener('click', (evt) => {
         document.getElementsByClassName('hambug-open')[0].style.display = 'none'
         document.getElementsByClassName('hambug')[0].style.display = 'flex'
+
+        // document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
+
     })
 }
 
