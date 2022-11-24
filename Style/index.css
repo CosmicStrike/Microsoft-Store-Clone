@@ -238,7 +238,7 @@ header {
 }
 
 /* For the three lines appearing horizontally*/
-[class*="hambug-line-"] {
+.hambug-line {
     background-color: rgb(0, 0, 0);
     width: 40%;
     height: 0.12rem;
@@ -499,4 +499,8 @@ footer {
 
 .display-none {
     display: none;
+}
+
+.display-grid {
+    display: grid;
 }

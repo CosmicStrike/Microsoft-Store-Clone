@@ -73,6 +73,8 @@ function ManageDropDown() {
         })
     }
 
+
+
     //Adds event listener on documnet so that if clicked outside dropdown, it will close
     document.addEventListener('click', (event) => {
         for (var i = 0; i < dropdownList.length; i++) {
@@ -90,6 +92,25 @@ function ManageDropDown() {
                 }
             }
             ToggleAllNavbarStyle()
+            const width = window.innerWidth
+            if (width < 1050) {
+                if (!(event.target.classList.contains('hambug') || event.target.classList.contains('hambug-line'))) {
+                    if (document.getElementsByClassName('nav-left')[0].classList.contains('display-block')) {
+
+                        var sub_dropdown_list = document.getElementsByClassName('sub-dropdown-list')
+                        for (var i = 0; i < sub_dropdown_list.length; i++) {
+                            if (sub_dropdown_list[i].classList.contains('display-flex')) sub_dropdown_list[i].classList.toggle('display-flex')
+                            // print(sub_dropdown_list[i])
+                        }
+                        document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
+                        var lab = document.getElementsByClassName('hambug-open')[0]
+                        lab.style.display = 'none'
+                        if (document.getElementsByClassName('hambug')[0].classList.contains('display-none'))
+                            document.getElementsByClassName('hambug')[0].classList.toggle('display-none')
+
+                    }
+                }
+            }
         }
     })
 }
@@ -97,34 +118,82 @@ function ManageDropDown() {
 
 function Hambug() {
     document.getElementsByClassName('hambug')[0].addEventListener('click', (evt) => {
-        document.getElementsByClassName('hambug')[0].style.display = 'none'
-        document.getElementsByClassName('hambug-open')[0].style.display = 'flex'
         document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
-        print(evt.target.elementName)
+        document.getElementsByClassName('hambug')[0].classList.toggle('display-none')
+        var lab = document.getElementsByClassName('hambug-open')[0]
+        lab.style.display = 'flex'
     })
-
-    //Add event listeners to layer 1
 }
 
 function HambugOpened() {
     document.getElementsByClassName('hambug-open')[0].addEventListener('click', (evt) => {
-        document.getElementsByClassName('hambug-open')[0].style.display = 'none'
-        document.getElementsByClassName('hambug')[0].style.display = 'flex'
-
-        // document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
-
+        document.getElementsByClassName('hambug')[0].classList.toggle('display-none')
+        var lab = document.getElementsByClassName('hambug-open')[0]
+        lab.style.display = 'none'
     })
 }
 
+function ActivateLayer3(event) {
+    var sib
+    print(event.target)
+
+    if (event.target.classList.contains('sub-dropdown-list-head')) {
+        sib = event.target.parentElement.children[1]
+        print(sib)
+        sib.classList.toggle('display-flex')
+    }
+    else if (event.target.classList.contains('sub-nav-head') || event.target.classList.contains('dropdown-arrow')) {
+        sib = event.target.parentElement.parentElement.children[1]
+        print(sib)
+        sib.classList.toggle('display-flex')
+    }
+}
+
 function ManageDropDownMobile() {
+    window.addEventListener('resize', WindowResized)
     Hambug()
     HambugOpened()
+
+    // Add event listener for layer 3 
+    // Using Event Delegation 
+    // Event Delegation is a technique where instead of assiging same event listener to two or more elements we will assign, only one event listener to their parent element and to figure out on which element did event occur we will use event.target attribute to give us the target element on which the event occurs 
+
+    // This is without delegation where i was adding event listener to each <li> in <ul>
+
+    // var sub_dropdown_head = document.getElementsByClassName("sub-dropdown-list-head")
+    // for (var i = 0; i < sub_dropdown_head.length; i++) {
+
+
+    // }
+
+
+    //This is with delegation where i am adding event to their common parent i.e <ul>
+    var dropdown_container = document.getElementsByClassName('dropdown-container')[0]
+    dropdown_container.addEventListener('click', ActivateLayer3)
+}
+
+function WindowResized() {
+    const mediaFireed = window.matchMedia('(max-width:1050px)')
+    if (!mediaFireed.matches) {
+        if (document.getElementsByClassName('nav-left')[0].classList.contains('display-block'))
+            document.getElementsByClassName('nav-left')[0].classList.toggle('display-block')
+
+        var lab = document.getElementsByClassName('hambug-open')[0]
+        lab.style.display = 'none'
+
+        if (document.getElementsByClassName('hambug')[0].classList.contains('display-none'))
+            document.getElementsByClassName('hambug')[0].classList.toggle('display-none')
+        HideAllDropDown([0, 1, 2])
+        ToggleAllNavbarStyle()
+    }
 }
 
 // ********************** Ready Function ************************
 
 
+
 function ready() {
+    // window.addEventListener('load', (e) => { print("HI") })
 
     //Manages dropdown for a Desktop version app
     ManageDropDown()
