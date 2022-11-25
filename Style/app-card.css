@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.store {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.app-card {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+    margin: 1rem 0.2rem;
+    padding: 0.8rem;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: 6.2rem 1fr auto; */
+    /* grid-gap: 0.4rem; */
+
+    font-family: Segoe UI Variable Text,
+        Segoe UI,
+        SegoeUI,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    box-shadow: 0.02rem 0.02rem 0.2rem #bdbcbc;
+}
+
+.app-card:hover {
+    box-shadow: 0.02rem 0.05rem 0.4rem #bdbcbc;
+
+}
+
+.app-logo {
+    background-color: rgb(249, 249, 249);
+    width: 6.2rem;
+    height: 6.2rem;
+
+    align-self: center;
+}
+
+.app-logo img {
+    border-radius: 0.6rem;
+}
+
+.app-details {
+    background-color: rgb(255, 255, 255);
+    height: 6.2rem;
+    margin-left: 0.8rem;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.app-name {
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+.app-category {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.app-rating {
+    height: 1.8rem;
+}
+
+.app-price {
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+.app-purchase {
+    min-width: 1rem;
+    background-color: rgb(255, 255, 255);
+    height: 6.2rem;
+
+    text-align: center;
+}
+
+.app-purchase button {
+    background-color: white;
+    color: rgb(79, 79, 79);
+
+
+    border-radius: 0.2rem;
+    border: 0.02rem solid #d1d1d1;
+    box-shadow: 0rem 0.02rem 0.02rem #4b4b4b;
+
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    margin-top: 1.6rem;
+    padding: 0.3rem 1.4rem;
+}
+
+.app-purchase p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(158, 158, 158);
+    margin-top: 0.2rem;
+}
+
+.app-details-vertical {
+    margin: 0px;
+    margin-top: 1rem;
+    flex-grow: 0;
+
+    /* height: 8rem; */
+}
+
+.app-purchase-vertical {
+    display: none;
+    margin-top: 1.8rem;
+}
+
+.app-purchase-vertical button {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+
+    color: #6f6f6f;
+}
+
+.app-purchase-vertical p {
+    display: none;
+}
+
+.app-price-vertical {
+    margin-top: 4.6rem;
+}
+
+.app-card-vertical {
+    width: 10rem;
+    height: 18rem;
+
+    flex-direction: column;
+}
+
+.app-card-vertical:hover .app-price-vertical {
+    display: none;
+}
+
+.app-card-vertical:hover .app-purchase-vertical {
+    display: block;
+}
+
+
+@media (max-width:1050px) {
+    .app-purchase {
+        display: none;
+    }
+
+    .app-logo-vertical {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .app-card-vertical {
+        width: 9rem;
+        height: 17.6rem
+    }
+}
