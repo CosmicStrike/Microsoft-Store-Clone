@@ -476,14 +476,6 @@ header {
     }
 }
 
-main {
-    /* flex-grow : it will make main section grow so as to all three will take total space without any gap*/
-    flex-grow: 1;
-    margin-top: 3.8rem;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-}
-
 footer {
     background-color: rgb(2, 133, 137);
     width: 100%;
