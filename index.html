@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="Style/app-card.css">
     <link rel="stylesheet" href="Style/app-store.css">
     <script src="Scripts/navbar.js" async></script>
+    <script src="Scripts/app-store.js" async></script>
     <link rel="icon" href="Images/favicon.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -312,10 +313,13 @@
 
     <main>
         <div class="container">
-            <div class="category"></div>
+            <div class="category">
+                <div class="search-bar">
+                    <span>Search</span>
+                    <input type="search" placeholder="Search all applications">
+                </div>
+            </div>
             <div class="app-store">
-
-
                 <div class="store-head">
                     <div class="store-title">
                         <span>HC</span>
@@ -325,11 +329,30 @@
                         <span>Search</span>
                         <input type="search" placeholder="Search all applications">
                     </div>
+                    <div class="open-store-app">
+                        <div class="store-logo">
+                            <img src="Images/favicon.png">
+                        </div>
+                        <div class="store-info">
+                            <p>Microsoft Store app</p>
+                            <p>Discover the experiences you'll love most on your Windows device.</p>
+                        </div>
+                        <button type="button">Open Store app</button>
+                    </div>
                 </div>
 
 
                 <div class="store-popular-apps">
-                    <div class="popular-app-list"></div>
+                    <div class="popular-app-list">
+                        <img src="Images/App-Store/Popular-app-1.jpg">
+                        <div class="popular-app-list-navigation">
+                            <span class="material-icons navigation-left" style="font-size:2rem;">
+                                chevron_left</span>
+                            <!-- <div style="flex-grow: 1; background-color:black"></div> -->
+                            <span class="material-icons navigation-right"
+                                style="font-size:2rem; margin-left: 22.6rem;">chevron_right</span>
+                        </div>
+                    </div>
                     <div class="popular-app-list-index">
                         <span class="list-index-1"></span>
                         <span class="list-index-2"></span>

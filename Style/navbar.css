@@ -31,6 +31,8 @@ header {
          It is becasue of position is fixed from top: 0px
      */
     position: fixed;
+    /* Make the navbar as topmost element among other elements whose position in absolute or relative*/
+    z-index: 1;
     top: 0px;
     box-shadow: 0.1rem 0.1rem 8px #d3d3d3df;
 }
@@ -52,6 +54,7 @@ header {
 
 .nav-left {
     flex-grow: 1;
+
 }
 
 .nav-right {
@@ -257,6 +260,8 @@ header {
 }
 
 @media (max-width: 1050px) {
+
+    
     .main-nav-item-2 {
         display: none;
         /*sign option hide*/
@@ -281,6 +286,9 @@ header {
         top: 3.3rem;
 
         width: 100%;
+
+        /* Make the navbar as topmost element among other elements whose position in absolute or relative*/
+        z-index: 1;
 
         background-color: #efefef;
     }
