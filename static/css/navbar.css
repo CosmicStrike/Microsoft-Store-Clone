@@ -8,8 +8,6 @@
 
 body {
     max-width: 100vw;
-    min-height: 300vh;
-
     display: flex;
     /* 
         justify-content : along main axis 
@@ -18,13 +16,13 @@ body {
         align-content: along corss axis, applicabale when flex-wrap is used otherwise not
     */
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
 header {
     background-color: white;
-    background: white;
+    /* background-color: rgb(145, 65, 65); */
     width: 100%;
     /*
          Now Header will always remain at top of page even if we scroll
@@ -261,7 +259,7 @@ header {
 
 @media (max-width: 1050px) {
 
-    
+
     .main-nav-item-2 {
         display: none;
         /*sign option hide*/

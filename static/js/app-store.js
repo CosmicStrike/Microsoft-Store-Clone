@@ -2,36 +2,38 @@
 if (document.readyState == 'loading') document.addEventListener('DOMContentLoaded', ready())
 else ready()
 
-let img_index = 0
 
 function print(msg) {
     console.log(msg)
 }
 
-function ChangeImage(handle) {
-    var images = ["Images/App-Store/Popular-app-1.jpg", "Images/App-Store/AdobeExpress.png", "Images/App-Store/VoiceRecorder.png"]
-    if (handle.classList.contains('navigation-left')) {
-        img_index -= 1
-        if (img_index < 0) img_index = 2
-    }
-    else {
-        img_index = (img_index + 1) % 3
-    }
+function Add_Store_Menu_Event(target) {
+    target.addEventListener('click', (e) => {
+        document.getElementsByClassName('app-store')[0].classList.toggle('display-none')
+        document.getElementsByClassName('category')[0].classList.toggle('display-block')
+        document.getElementsByClassName('store-title-menu')[0].classList.toggle('display-block')
+        document.getElementsByClassName('container')[0].classList.toggle('app-store-menu-width')
+        document.getElementsByTagName('main')[0].classList.toggle('app-store-menu-margin')
+    })
+}
 
-    var applist = document.getElementsByClassName('popular-app-list')[0]
-    img = applist.getElementsByTagName('img')[0]
-    img.src = images[img_index]
-    print(img_index)
+function App_Store_Menu() {
+    //Mobile app store menu
+    var icons = document.getElementsByClassName('material-symbols-outlined')
+    for (var i = 0; i < icons.length; i++) {
+        if (icons[i].textContent.trim() == 'close') {
+            if (icons[i].parentElement.classList.contains('store-title')) {
+                Add_Store_Menu_Event(icons[i])
+            }
+        }
+        else if (icons[i].textContent.trim() == 'menu') {
+            if (icons[i].parentElement.classList.contains('store-title')) {
+                Add_Store_Menu_Event(icons[i])
+            }
+        }
+    }
 }
 
 function ready() {
-
-
-
-    document.getElementsByTagName('main')[0].addEventListener('click', (event) => {
-        var elem = event.target
-        if (elem.classList.contains('navigation-left') || elem.classList.contains('navigation-right')) {
-            ChangeImage(elem)
-        }
-    })
+    App_Store_Menu()
 }

@@ -185,6 +185,27 @@ function WindowResized() {
             document.getElementsByClassName('hambug')[0].classList.toggle('display-none')
         HideAllDropDown([0, 1, 2])
         ToggleAllNavbarStyle()
+
+        // Back to normal when user resize the window
+        // These changes indecate the sitution where user opens app-store menu(i.e categorize list) in mobile view 
+        // and resize the window to it's desktop view
+        // So at that time all the changes made on css to open app-store-menu are destroyed
+        // This below code is for app-store
+        if (document.getElementsByClassName('app-store')[0].classList.contains('display-none'))
+            document.getElementsByClassName('app-store')[0].classList.toggle('display-none')
+
+        if (document.getElementsByClassName('category')[0].classList.contains('display-block'))
+            document.getElementsByClassName('category')[0].classList.toggle('display-block')
+
+        if (document.getElementsByClassName('store-title-menu')[0].classList.contains('display-block'))
+            document.getElementsByClassName('store-title-menu')[0].classList.toggle('display-block')
+
+        if (document.getElementsByClassName('container')[0].classList.contains('app-store-menu-width'))
+            document.getElementsByClassName('container')[0].classList.toggle('app-store-menu-width')
+
+        if (document.getElementsByClassName('main')[0].classList.contains('app-store-menu-margin'))
+            document.getElementsByClassName('main')[0].classList.toggle('app-store-menu-margin')
+
     }
 }
 
