@@ -335,84 +335,175 @@
                 <div class="category-list">
                     <ul>
                         <li>
-                            <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Home
+                            <a href="{% url 'Home' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Home
+                            </a>
                         </li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Get Started</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Productivity</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Windows Themes</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Photo & video</li>
+                        <li>
+                            <a href="{% url 'category' 'Get Started' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Get Started
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Productivity' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Productivity
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Windows Themes' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Windows Themes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Photo & video' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Photo & video
+                            </a>
+                        </li>
                     </ul>
-                    <p>Category</p>
+                    <p>Categories</p>
                     <ul>
-                        <li><span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Business</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Developer tools</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Education</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Entertainment</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Health & fitness</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Kids & family</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Lifestyle</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Multimedia design</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Music</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>News & Weather</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Personal finance</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Personalization</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Security</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Shopping</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Social</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Sports</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Travel</li>
-                        <li> <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
-                                home
-                            </span>Utilities & tools</li>
+                        <li>
+                            <a href="{% url 'category' 'Business' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Business
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Developer tools' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Developer tools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Education' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Entertainment' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Entertainment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Health & fitness' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Health & fitness
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Kids & family' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Kids & family
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Lifestyle' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Lifestyle
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Multimedia design' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Multimedia design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Music' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Music
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'News & Weather' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>News & Weather
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Personal finance' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Personal finance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Personalization' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Personalization
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Security' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Security
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Shopping' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Shopping
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Social' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Social
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Sports' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Sports
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Travel' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Travel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'category' 'Utilities & tools' %}">
+                                <span class="material-symbols-outlined" style="font-size: 20px; font-weight: 400;">
+                                    home
+                                </span>Utilities & tools
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
             </div>
-            <div class="app-store">
+            {% if category == 'Home' %}
+            <div class="main-store">
                 <div class="store-head">
                     <div class="store-title">
                         <span class="material-symbols-outlined"
@@ -439,101 +530,157 @@
                     </div>
                 </div>
 
-
-                <div class="store-popular-apps">
-                    <div class="popular-app-list">
-                        <img src="{% static 'images/App-Store/Popular-app-1.jpg' %}">
-                        <div class="popular-app-list-navigation">
-                            <span class="material-icons navigation-left" style="font-size:2rem;">
-                                chevron_left</span>
-                            <span class="material-icons navigation-right" style="font-size:2rem;">chevron_right</span>
+                <div class="app-store">
+                    <div class="store-popular-apps">
+                        <div class="popular-app-list">
+                            <img src="{% static 'images/App-Store/Popular-app-1.jpg' %}">
+                            <div class="popular-app-list-navigation">
+                                <span class="material-icons navigation-left" style="font-size:2rem;">
+                                    chevron_left</span>
+                                <span class="material-icons navigation-right"
+                                    style="font-size:2rem;">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="popular-app-list-index">
+                            <span class="list-index-1"></span>
+                            <span class="list-index-2"></span>
+                            <span class="list-index-3"></span>
+                            <span class="list-index-4"></span>
+                            <span class="list-index-5"></span>
+                            <span class="list-index-6"></span>
+                            <span class="list-index-7"></span>
+                            <span class="list-index-8"></span>
                         </div>
                     </div>
-                    <div class="popular-app-list-index">
-                        <span class="list-index-1"></span>
-                        <span class="list-index-2"></span>
-                        <span class="list-index-3"></span>
-                        <span class="list-index-4"></span>
-                        <span class="list-index-5"></span>
-                        <span class="list-index-6"></span>
-                        <span class="list-index-7"></span>
-                        <span class="list-index-8"></span>
+
+
+                    <div class="store-app-list">
+                        <p class="category-name">Best entertainment apps</p>
+                        <!-- Here comes all cards-->
+                        <div class="app-card-container">
+                            <div class="app-card app-card-vertical">
+                                <div class="app-logo app-logo-vertical"><img
+                                        src="{% static 'images/App-Store/AdobeExpress.png' %}"></div>
+                                <div class="app-details app-details-vertical">
+                                    <div class="app-name">Adobe Express</div>
+                                    <div class="app-category">Multimedia Design</div>
+                                    <div class="app-rating">*******</div>
+                                    <div class="app-price app-price-vertical">Free</div>
+                                </div>
+                                <div class="app-purchase app-purchase-vertical">
+                                    <button>Get in Store app</button>
+                                    <p>From Amazon Appstore</p>
+                                </div>
+                            </div>
+
+                            <div class="app-card app-card-vertical">
+                                <div class="app-logo app-logo-vertical"><img
+                                        src="{% static 'images/App-Store/VoiceRecorder.png' %}"></div>
+                                <div class="app-details app-details-vertical">
+                                    <div class="app-name">Adobe Express</div>
+                                    <div class="app-category">Multimedia Design</div>
+                                    <div class="app-rating">*******</div>
+                                    <div class="app-price app-price-vertical">Free</div>
+                                </div>
+                                <div class="app-purchase app-purchase-vertical">
+                                    <button>Get in Store app</button>
+                                    <p>From Amazon Appstore</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="border-bottom: 0.1rem solid #0066b4bb; color:#0066b4bb; width: 4.6rem;">View more</p>
                     </div>
-                </div>
+                    <div class="store-app-list">
+                        <p class="category-name">Utility Apps</p>
+                        <!-- Here comes all cards-->
+                        <div class="app-card-container">
 
-
-                <div class="store-app-list">
-                    <p class="category-name">Best entertainment apps</p>
-                    <!-- Here comes all cards-->
-                    <div class="app-card-container">
-                        <div class="app-card app-card-vertical">
-                            <div class="app-logo app-logo-vertical"><img
-                                    src="{% static 'images/App-Store/AdobeExpress.png' %}"></div>
-                            <div class="app-details app-details-vertical">
-                                <div class="app-name">Adobe Express</div>
-                                <div class="app-category">Multimedia Design</div>
-                                <div class="app-rating">*******</div>
-                                <div class="app-price app-price-vertical">Free</div>
+                            <div class="app-card">
+                                <div class="app-logo"><img src="{% static 'images/App-Store/AdobeExpress.png' %}"></div>
+                                <div class="app-details">
+                                    <div class="app-name">Adobe Express</div>
+                                    <div class="app-category">Multimedia Design</div>
+                                    <div class="app-rating">*******</div>
+                                    <div class="app-price">Free</div>
+                                </div>
+                                <div class="app-purchase">
+                                    <button>Get in Store app</button>
+                                    <p>From Amazon Appstore</p>
+                                </div>
                             </div>
-                            <div class="app-purchase app-purchase-vertical">
-                                <button>Get in Store app</button>
-                                <p>From Amazon Appstore</p>
+
+                            <div class="app-card">
+                                <div class="app-logo"><img src="{% static 'images/App-Store/VoiceRecorder.png' %}">
+                                </div>
+                                <div class="app-details">
+                                    <div class="app-name">Adobe Express</div>
+                                    <div class="app-category">Multimedia Design</div>
+                                    <div class="app-rating">*******</div>
+                                    <div class="app-price">Free</div>
+                                </div>
+                                <div class="app-purchase">
+                                    <button>Get in Store app</button>
+                                    <p>From Amazon Appstore</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="app-card app-card-vertical">
-                            <div class="app-logo app-logo-vertical"><img
-                                    src="{% static 'images/App-Store/VoiceRecorder.png' %}"></div>
-                            <div class="app-details app-details-vertical">
-                                <div class="app-name">Adobe Express</div>
-                                <div class="app-category">Multimedia Design</div>
-                                <div class="app-rating">*******</div>
-                                <div class="app-price app-price-vertical">Free</div>
-                            </div>
-                            <div class="app-purchase app-purchase-vertical">
-                                <button>Get in Store app</button>
-                                <p>From Amazon Appstore</p>
-                            </div>
-                        </div>
+                        <p style="border-bottom: 0.1rem solid #0066b4bb; color:#0066b4bb; width: 4.6rem;">View more</p>
                     </div>
-                    <p style="border-bottom: 0.1rem solid #0066b4bb; color:#0066b4bb; width: 4.6rem;">View more</p>
-                </div>
-                <div class="store-app-list">
-                    <p class="category-name">Utility Apps</p>
-                    <!-- Here comes all cards-->
-                    <div class="app-card-container">
-
-                        <div class="app-card">
-                            <div class="app-logo"><img src="{% static 'images/App-Store/AdobeExpress.png' %}"></div>
-                            <div class="app-details">
-                                <div class="app-name">Adobe Express</div>
-                                <div class="app-category">Multimedia Design</div>
-                                <div class="app-rating">*******</div>
-                                <div class="app-price">Free</div>
-                            </div>
-                            <div class="app-purchase">
-                                <button>Get in Store app</button>
-                                <p>From Amazon Appstore</p>
-                            </div>
-                        </div>
-
-                        <div class="app-card">
-                            <div class="app-logo"><img src="{% static 'images/App-Store/VoiceRecorder.png' %}"></div>
-                            <div class="app-details">
-                                <div class="app-name">Adobe Express</div>
-                                <div class="app-category">Multimedia Design</div>
-                                <div class="app-rating">*******</div>
-                                <div class="app-price">Free</div>
-                            </div>
-                            <div class="app-purchase">
-                                <button>Get in Store app</button>
-                                <p>From Amazon Appstore</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p>View more</p>
                 </div>
             </div>
+            {% else %}
+            <div class="store-title">
+                <span class="material-symbols-outlined" style="font-size: 20px; margin-left: 1rem; color:#9a9999;">
+                    menu
+                </span>
+                <span class="store-name">Windows Apps</span>
+            </div>
+            <div class="search-bar">
+                <span class="material-symbols-outlined" style="font-size:22px; color: #707070">
+                    search
+                </span>
+                <input type="search" placeholder="Search all applications">
+            </div>
+            <div class="category-app-store">
+                <p id="categoryname">{{ category }}</p>
+                <div class="top-apps">
+                    <p>Top apps</p>
+                    <div class="app-card">
+                        <div class="app-logo"><img src="{% static 'images/App-Store/VoiceRecorder.png' %}">
+                        </div>
+                        <div class="app-details">
+                            <div class="app-name">Adobe Express</div>
+                            <div class="app-category">Multimedia Design</div>
+                            <div class="app-rating">*******</div>
+                            <div class="app-price">Free</div>
+                        </div>
+                        <div class="app-purchase">
+                            <button>Get in Store app</button>
+                            <p>From Amazon Appstore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-apps">
+                    <p>More apps</p>
+
+                    <div class="app-card app-card-vertical">
+                        <div class="app-logo app-logo-vertical"><img
+                                src="{% static 'images/App-Store/AdobeExpress.png' %}"></div>
+                        <div class="app-details app-details-vertical">
+                            <div class="app-name">Adobe Express</div>
+                            <div class="app-category">Multimedia Design</div>
+                            <div class="app-rating">*******</div>
+                            <div class="app-price app-price-vertical">Free</div>
+                        </div>
+                        <div class="app-purchase app-purchase-vertical">
+                            <button>Get in Store app</button>
+                            <p>From Amazon Appstore</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            {% endif %}
         </div>
     </main>
 

@@ -203,8 +203,12 @@ function WindowResized() {
         if (document.getElementsByClassName('container')[0].classList.contains('app-store-menu-width'))
             document.getElementsByClassName('container')[0].classList.toggle('app-store-menu-width')
 
-        if (document.getElementsByClassName('main')[0].classList.contains('app-store-menu-margin'))
-            document.getElementsByClassName('main')[0].classList.toggle('app-store-menu-margin')
+        if (document.getElementsByClassName('store-head')[0].classList.contains('display-none'))
+            document.getElementsByClassName('store-head')[0].classList.toggle('display-none')
+
+
+        if (document.getElementsByTagName('main')[0].classList.contains('app-store-menu-margin'))
+            document.getElementsByTagName('main')[0].classList.toggle('app-store-menu-margin')
 
     }
 }
